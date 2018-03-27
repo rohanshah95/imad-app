@@ -14,5 +14,5 @@ function moveRight(){
 }
 madi.onclick = function()
 {
-    var interval = setInterval(moveRight, 100);
+    var interval = setInterval(moveRight, 50);
 };
