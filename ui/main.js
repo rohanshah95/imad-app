@@ -20,3 +20,21 @@ button.onclick=function()
   request.open('GET', 'http://rohanshah3895rs.imad.hasura-app.io/counter',true);
   request.send(null);
 };
+//Submit Name
+var nameInput=document.getElementById('Name');
+var name=nameInput.value;
+var submit=document.getElementById('submit_btn');
+submit.onclick=function()
+{
+    //Make a Request to Server and send the Name
+    
+    //Capture a list of Names & render it as a List
+    var names=['Name 1','Name 2','Name 3','Name 4'];
+    var list='';
+    for(var i=0;i<name.length;i++)
+    {
+        list+='<li>' + name[i] + '</li>';
+    }
+    var ul=document.getElementById('namelist');
+    ul.innerHTML=list;
+};
