@@ -28,11 +28,11 @@ submit.onclick=function()
 {
     //Make a Request to Server and send the Name
     //Capture a list of Names & render it as a List
-    var name=['name 1','name 2','name 3','name 4'];
+    var names=['name 1','name 2','name 3','name 4'];
     var list='';
     for(var i=0;i<names.length;i++)
     {
-        list+='<li>' + name[i] + '</li>';
+        list+='<li>' + names[i] + '</li>';
     }
     var ul=document.getElementById('namelist');
     ul.innerHTML=list;
